@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link rel="stylesheet" href="index.css">
+    <title>TODO List</title>
+</head>
+<body>
+    
+    
+    <div id="container-div">
+
+        <div class="main-div">
+
+            <div id="header_div" class="animate__backInDown">
+                <p>A TODO LIST</p>
+            </div>
+
+            <div class="input-div">
+                <span id="note-icon"><i class="far fa-sticky-note"></i></span>
+                <input type="text" name="task" placeholder="Things to be done..." id="input_content">
+                <button type="submit" id="plus-button"><i class="fas fa-plus-circle"></i></button>
+            </div>
+
+            <div class="header-div">
+                <div>
+                    <span><i class="fas fa-check-double"></i></span>
+                    <span id="complete_action" class="for_cursor">Complete all task</span>
+                </div>
+                <div>
+                    <span id="clear_action" class="for_cursor">Clear Completed</span>
+                </div>
+            </div>
+
+            <div class="task-div">
+                <ul class="myTasks">
+                   
+                </ul>
+            </div>
+
+            <div class="footer-div">
+                <div>
+                    <span id="number_in_myList"></span>
+                    <span> tasks left</span>
+                </div>
+                <div>
+                    <span id="all_task" class="for_cursor">All</span>
+                    <span id="uncompleted_task" class="for_cursor">Uncompleted</span>
+                    <span id="completed_task" class="for_cursor">Completed</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script type="text/javascript" src="index.js"></script>
+</body>
+</html>

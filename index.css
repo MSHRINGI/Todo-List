@@ -1,0 +1,215 @@
+body{
+    display: flex;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0%;
+    /* flex-direction: column; */
+}
+
+#header_div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(45deg, #c6b2d5, #fb7b30);
+    margin-bottom: 15px;
+    font-size: 2rem;
+    color: white;
+    font-weight: 700;
+}
+
+#header_div p{
+    background-image: linear-gradient(to right, blue, red);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* -----------------------------Container Div------------------ */
+
+#container-div{
+    width: 70%;
+    height: auto;
+    background-color: #bdced3;
+    margin: 1.5rem;
+    align-items: center;
+    /* border: 2px solid black; */
+    display: flex;
+    justify-content: center;
+}
+
+@media only screen and (max-width: 770px) {
+    #container-div {
+        width: 100%;
+        min-width: 500px;
+    }
+  }
+
+/* -----------------------------Main Div---------------------- */
+
+.main-div{
+    margin: 20px;
+    height: auto;
+    width: 90%;
+    background-color: #0e0240;
+    padding: 20px;
+    box-shadow: 20px honeydew;
+}
+
+/* ----------------------------Input Div-------------------- */
+
+.input-div{
+    position: relative;
+    font-size: 2rem;
+    /* border: 2px solid black; */
+}
+
+.input-div input{
+    width: 100%;
+    padding: 5px 50px;
+    background-color: white;
+    font-size: 2rem;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+#note-icon{
+    position: absolute;
+    font-size: 2.2rem;
+    left: 10px;
+    top: 6px;
+}
+
+#plus-button{
+    position: absolute;
+    font-size: 1.7rem;
+    left: 94.5%;
+    top: 17%;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+/* ----------------------Header Div---------------------------- */
+
+.header-div{
+    display: flex;
+    justify-content: space-between;
+    color: lightgray;
+    margin: 1rem;
+}
+
+/* -------------------------Task-div---------------------------- */
+.task-div{
+    width: auto;
+    min-height: 150px;
+    max-height: 287px;
+    border-top: 1px solid grey;
+    border-bottom: 1px solid grey;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+.task-div ul{
+    list-style: none;
+    margin: 5px;
+}
+
+ul{
+    padding: 0px;
+}
+
+ul li{
+    padding: 5px 1rem;
+}
+
+li:nth-child(2n){
+    background-color: lightgray;
+    
+}
+
+li:nth-child(2n+1){
+    background-color: #b1b0b0;
+    /* color: wheat; */
+}
+
+li:hover{
+    cursor: pointer;
+    background-color: #463774;
+    color: white;
+}
+
+.myTasks{
+    /* flex: 1 1 0%; */
+    font-size: 2rem;
+    font-weight: 500;
+    position: relative;
+}
+
+.dlt-btn{
+    font-size: 1.5rem;
+    background: none;
+    border: none;
+    padding: 5px;
+    box-sizing: border-box;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+.dlt-btn:hover{
+    background-color: crimson;
+    cursor: pointer;
+    color: white;
+}
+
+ul li.checked {
+    background: #888;
+    color: #fff;
+    text-decoration: line-through;
+}
+  
+  /* Add a "checked" mark when clicked on */
+/* ul li.checked::before {
+    content: '';
+    position: absolute;
+    border-color: #fff;
+    border-style: solid;
+    border-width: 0 2px 2px 0;
+    top: 10px;
+    left: 16px;
+    transform: rotate(45deg);
+    height: 15px;
+    width: 7px;
+} */
+
+.hide_tick{
+    font-size: 1.7rem;
+    margin-right: 10px;
+    visibility: hidden;
+}
+
+.show_tick{
+    visibility: visible;
+}
+
+
+
+
+/* --------------------------Footer div------------------------- */
+
+.footer-div{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    color: white;
+}
+
+.for_cursor{
+    margin: 5px;
+    color: white;
+}
+
+.for_cursor:hover{
+    transition: 0.2s;
+    cursor: pointer;
+    color: grey;
+    text-decoration: underline;
+}
